@@ -1,4 +1,4 @@
-ul {
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,6 +7,8 @@ ul {
   height: 100%;
   position: fixed;
   overflow: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 li a {
@@ -18,15 +20,100 @@ li a {
 }
 
 li a:hover {
-  background-color: #04aa57;
+  background-color: #ba00d3;
   color: white;
 }
 
-.active {
-  background-color: #04aa6d;
-  color: white;
-}
 
 h2 {
-  margin: 1000;
+  margin-left: 17%;
+}
+
+li img {
+  align-items: center;
+  width:200px;
+  height:300px;
+
+}
+
+li a.active {
+  background-color: #0004ee;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(117, 2, 224);
+  color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.container {
+  margin-left: 18%;
+  margin-right: 15%;
+  margin-top: 30px;
+  padding: 1px 16px;
+  position: fixed;
+  height: 100%;
+  width: 80%;
+  overflow: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1.header{
+  background-color: aquamarine;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 10px solid #6901f1;
+  color: #ff01c8;
+  
+}
+
+div.ex {
+  font-size: 1em;
+  color: black;
+  background-color: rgba(209, 255, 247, 0.993);
+  border: 3px solid #6901f1;
+  padding: 0.3em 0.5em;
+  margin-right: 15%;
 }
