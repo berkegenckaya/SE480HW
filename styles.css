@@ -24,7 +24,6 @@ li a:hover {
   color: white;
 }
 
-
 h2 {
   margin-left: 17%;
 }
@@ -89,7 +88,7 @@ li a:hover:not(.active) {
 }
 
 div.container {
-  margin-left: 18%;
+  margin-left: 16%;
   margin-right: 15%;
   margin-top: 30px;
   padding: 1px 16px;
